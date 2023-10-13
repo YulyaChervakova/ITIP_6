@@ -1,0 +1,40 @@
+body{
+    background: #00ffaa;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(62, 97, 98, 0.745);
+    margin: 1% 10%;
+}
+.header{
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row;
+    margin: auto;
+}
+.header h4{
+    margin: 20% 0;
+}
+.content{
+    margin:0 40%;
+}
+a {
+    color:#ffffff;
+}
+.archive {
+    width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.post-title a {
+    color: #ffffff;
+}
+    
+.article-author { 
+    width: 50%; 
+    float: left;
+}
+        
+.article-created-date { 
+    text-align: right;
+}

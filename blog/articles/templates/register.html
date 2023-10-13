@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/reg.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="header post-title">
+        <a href="/"><h3>Все статьи</h3></a>
+        <a href="/login/"><h3>Авторизация</h3></a>
+    </div>
+    <div class="content password">
+        {%load static%}
+        <h1>Регистрация</h1>
+        <form method="POST">{% csrf_token %}
+            <input type="text" name="username" placeholder="Логин" value="{{ form.username }}"><br>            
+            <input type="email" name="mail" placeholder="email" value="{{ form.mail }}"><br>
+            <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}"><br>
+            <input type="submit" value="Отправить"><br>
+        </form> 
+        <div class="errors">{{ form.errors }}</div>    
+    </div>
+</body>
+</html>
